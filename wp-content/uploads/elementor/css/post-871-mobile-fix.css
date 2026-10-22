@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Mobile-only fix: Removes the excessive 50px top margin on section e7de8c8
+   (Trusted Healthcare card group) that creates a large gap after the
+   Patient-Centered Care card on mobile.
+   This file is loaded via the index.html <link> tag after post-871.css.
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+    .elementor-871 .elementor-element.elementor-element-e7de8c8 {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        padding-top: 4px !important;
+        padding-bottom: 8px !important;
+    }
+}
