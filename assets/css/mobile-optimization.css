@@ -2451,7 +2451,7 @@
        Applies 50px top/bottom and 20px left/right to real page sections.
        Intelligently excludes special/custom-spaced sections.
        ----------------------------------------------------------------------- */
-    html body .elementor:not(.elementor-312):not(.elementor-897):not(.elementor-315) > section.elementor-top-section:not(.elementor-element-deafe56):not(.elementor-element-05b0d67):not(.elementor-element-e7de8c8):not(.elementor-element-098a2f1):not(.elementor-element-a857fd2):not(.elementor-element-662fdd8):not(.elementor-element-2a7311e):not(.elementor-element-cb70e3c):not(.elementor-element-aab79ae):not(.elementor-element-78bc662):not(.elementor-hidden-mobile):not(.elementor-hidden-tablet) {
+    html body .elementor:not(.elementor-312):not(.elementor-897):not(.elementor-315) > section.elementor-top-section:not(.elementor-element-deafe56):not(.elementor-element-05b0d67):not(.elementor-element-e7de8c8):not(.elementor-element-098a2f1):not(.elementor-element-a857fd2):not(.elementor-element-662fdd8):not(.elementor-element-2a7311e):not(.elementor-element-cb70e3c):not(.elementor-element-aab79ae):not(.elementor-element-78bc662):not(.elementor-element-dfd9b3c):not(.elementor-hidden-mobile):not(.elementor-hidden-tablet) {
         padding-top: 50px !important;
         padding-bottom: 50px !important;
         padding-left: 20px !important;
@@ -2462,8 +2462,8 @@
     }
 
     /* Outer e-con parent containers (e.g. 503ce95, 3f924fb) */
-    html body .elementor:not(.elementor-312):not(.elementor-897):not(.elementor-315) > div.e-con-boxed:not(.elementor-hidden-mobile):not(.elementor-hidden-tablet),
-    html body .elementor:not(.elementor-312):not(.elementor-897):not(.elementor-315) > div.e-con.e-parent:not(.elementor-hidden-mobile):not(.elementor-hidden-tablet) {
+    html body .elementor:not(.elementor-312):not(.elementor-897):not(.elementor-315) > div.e-con-boxed:not(.elementor-element-503ce95):not(.elementor-hidden-mobile):not(.elementor-hidden-tablet),
+    html body .elementor:not(.elementor-312):not(.elementor-897):not(.elementor-315) > div.e-con.e-parent:not(.elementor-element-503ce95):not(.elementor-hidden-mobile):not(.elementor-hidden-tablet) {
         padding-top: 50px !important;
         padding-bottom: 50px !important;
         padding-left: 20px !important;
@@ -2990,4 +2990,82 @@
         padding-inline-start: 0 !important;
         letter-spacing: -0.2px !important;
     }
+
+    /* =========================================================================
+       7. HOME PAGE: READ MORE SECTION & BLUE STATISTICS SECTION SPACING
+       Eliminates the excessive vertical blank space between the Read More
+       button/content section and the blue statistics section, keeping them close
+       together with a clean, normal, professional mobile section gap (~25px).
+       ========================================================================= */
+    html body.home .elementor.elementor-871 section.elementor-section.elementor-element-dfd9b3c,
+    html body.elementor-page-871 .elementor.elementor-871 section.elementor-section.elementor-element-dfd9b3c,
+    html body .elementor.elementor-871 section.elementor-section.elementor-element-dfd9b3c,
+    html body.home .elementor-element.elementor-element-dfd9b3c,
+    html body.elementor-page-871 .elementor-element.elementor-element-dfd9b3c,
+    html body .elementor-871 .elementor-element.elementor-element-dfd9b3c {
+        padding-bottom: 12px !important;
+        padding-block-end: 12px !important;
+        --padding-bottom: 12px !important;
+        margin-bottom: 0 !important;
+        --margin-bottom: 0px !important;
+    }
+
+    html body.home .elementor.elementor-871 div.e-con.elementor-element-503ce95,
+    html body.elementor-page-871 .elementor.elementor-871 div.e-con.elementor-element-503ce95,
+    html body .elementor.elementor-871 div.e-con.elementor-element-503ce95,
+    html body.home .elementor-element.elementor-element-503ce95,
+    html body.elementor-page-871 .elementor-element.elementor-element-503ce95,
+    html body .elementor-871 .elementor-element.elementor-element-503ce95,
+    html body .elementor-element.elementor-element-503ce95 {
+        padding-top: 12px !important;
+        padding-block-start: 12px !important;
+        --padding-top: 12px !important;
+        margin-top: 0 !important;
+        --margin-top: 0px !important;
+    }
+
+    /* =========================================================================
+       8. SERVICES PAGE: VISUAL CONNECTION & CONSISTENT MOBILE ITEM SPACING
+       - Connects each service image and its blue content card via -60px overlap
+       - Enforces clean, consistent 25px mobile spacing between separate items
+       - Normalizes inner sections to prevent uneven gaps
+       ========================================================================= */
+    /* Normalize inner section vertical margins/padding across services */
+    html body.elementor-page-8 .elementor-element-0ff9b64 .elementor-inner-section,
+    html body .elementor-8 .elementor-element-0ff9b64 .elementor-inner-section,
+    html body.elementor-page-8 .elementor-inner-section,
+    html body .elementor-8 .elementor-inner-section {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        --margin-top: 0px !important;
+        --margin-bottom: 0px !important;
+    }
+
+    /* Service item columns: clean, consistent 25px gap between separate service cards */
+    html body.elementor-page-8 .elementor-element-0ff9b64 .elementor-inner-column,
+    html body .elementor-8 .elementor-element-0ff9b64 .elementor-inner-column {
+        margin-bottom: 25px !important;
+        padding-bottom: 0 !important;
+        --margin-bottom: 25px !important;
+    }
+
+    /* Service card image container */
+    html body.elementor-page-8 .elementor-element-0ff9b64 .elementor-widget-image,
+    html body .elementor-8 .elementor-element-0ff9b64 .elementor-widget-image {
+        margin-bottom: 0 !important;
+    }
+
+    /* Keep each image and its corresponding blue content card visually connected */
+    html body.elementor-page-8 .elementor-element-0ff9b64 .elementor-widget-wpr-promo-box,
+    html body .elementor-8 .elementor-element-0ff9b64 .elementor-widget-wpr-promo-box {
+        margin-top: -60px !important;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        margin-bottom: 0 !important;
+        position: relative !important;
+        z-index: 2 !important;
+    }
+
 }
